@@ -1,0 +1,102 @@
+1. Basic Class Definition
+
+Write a Python class Student with the following:
+
+Attributes: name, roll_no, marks
+
+A method display_details() that prints all the student details
+
+Create an object of the class and call the method.
+
+  
+2. Constructor Usage
+
+Define a class Employee that:
+
+Uses a constructor to initialize emp_id, emp_name, and salary
+
+Has a method calculate_annual_salary() that returns the annual salary
+
+Create two employee objects and display their annual salaries.
+
+  
+3. Instance vs Class Variables
+
+Create a class Car with:
+
+A class variable wheels = 4
+
+Instance variables brand and price
+
+Create two objects and print both class and instance variables.
+
+
+4. Object Interaction
+
+Define a class BankAccount with:
+
+Attributes: account_number, balance
+
+Methods: deposit(amount), withdraw(amount)
+
+Demonstrate deposits and withdrawals using an object.
+
+
+5. Method with Return Value
+
+Create a class Rectangle with:
+
+Attributes: length and breadth
+
+Methods: area() and perimeter() that return values
+
+Create an object and print the area and perimeter.
+
+  
+6. Encapsulation (Private Attributes)
+
+Define a class User with:
+
+Private attribute __password
+
+Method set_password(password)
+
+Method get_password()
+
+Show how the password is accessed only through methods.
+
+  
+7. Multiple Objects
+
+Create a class Book with:
+
+Attributes: title, author, price
+
+Method display()
+
+Create a list of book objects and display details of each book.
+
+
+8. __str__ Method
+
+Define a class Laptop with attributes brand and ram.
+Override the __str__() method to return a readable string representation.
+Print the object directly.
+
+  
+9. Simple Inheritance
+
+Create a base class Person with attributes name and age.
+Create a derived class Teacher with an additional attribute subject.
+Display all details using an object of Teacher.
+
+
+10. Real-World Scenario
+
+Design a class Order with:
+
+Attributes: order_id, product_name, quantity, price_per_unit
+
+Method total_price() to calculate total cost
+
+Create multiple orders and display their total prices.
