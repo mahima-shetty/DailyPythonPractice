@@ -1,0 +1,54 @@
+# Python Interview Core Topics (Focused)
+
+## Exception Handling
+- `try` block  
+- `except` block  
+- `else` block  
+- `finally` block  
+- Handling multiple exceptions  
+- Custom exceptions  
+- Raising exceptions  
+
+---
+
+## OOPs – Four Pillars
+
+### Encapsulation
+- Public, protected, private members  
+- Name mangling  
+- Getter and setter methods  
+
+### Abstraction
+- Abstract base classes  
+- `@abstractmethod`  
+- Hiding implementation details  
+
+### Inheritance
+- Single inheritance  
+- Multiple inheritance  
+- Use of `super()`  
+- Method overriding 
+- Method overloading
+
+### Polymorphism
+- Method overriding  
+- Operator overloading  
+- Duck typing  
+
+---
+
+## Generators
+- `yield` keyword  
+- Generator functions  
+- Generator vs normal function  
+- Iterating over generators  
+- Generator expressions  
+
+---
+
+## Decorators
+- Function decorators  
+- Decorators with arguments  
+- Nested functions  
+- `@decorator` syntax  
+- Use cases (logging, authentication, timing)  
