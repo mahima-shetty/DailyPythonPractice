@@ -1,0 +1,94 @@
+# OOPs – Four Pillars (Coding Questions)
+
+---
+
+## 1. Encapsulation (5 Coding Questions)
+
+1. Write a Python class `BankAccount` with:
+   - A private variable `__balance`
+   - Public methods `deposit()` and `withdraw()`
+   - A getter method to read the balance
+
+2. Create a class `Student` that:
+   - Uses protected variables for `name` and `roll_no`
+   - Provides setter and getter methods for accessing them
+
+3. Demonstrate name mangling by:
+   - Defining a private variable `__salary` in a class `Employee`
+   - Accessing it outside the class using name-mangled syntax
+
+4. Write a class `Car` where:
+   - Speed is a private attribute
+   - Speed can only be modified using setter methods with validation
+
+5. Design a class `User` that:
+   - Prevents direct modification of the password attribute
+   - Allows password update only through a method
+
+---
+
+## 2. Abstraction (5 Coding Questions)
+
+1. Create an abstract base class `Shape` with:
+   - An abstract method `area()`
+   - Implement it in subclasses `Rectangle` and `Circle`
+
+2. Write an abstract class `Vehicle` with:
+   - An abstract method `start_engine()`
+   - Concrete subclasses `Car` and `Bike`
+
+3. Demonstrate abstraction by:
+   - Creating an abstract class `Database`
+   - Implementing `connect()` in `MySQLDatabase` and `PostgresDatabase`
+
+4. Create an abstract class `PaymentMethod` with:
+   - An abstract method `pay(amount)`
+   - Implement subclasses `CreditCardPayment` and `UPIPayment`
+
+5. Write a program that shows:
+   - Abstract classes cannot be instantiated
+   - Instantiation works only for concrete subclasses
+
+---
+
+## 3. Inheritance (5 Coding Questions)
+
+1. Write a program demonstrating single inheritance using:
+   - Base class `Animal`
+   - Derived class `Dog`
+
+2. Demonstrate multiple inheritance using:
+   - Classes `Camera` and `Phone`
+   - Derived class `SmartPhone`
+
+3. Create a base class `Person` and child class `Employee`:
+   - Use `super()` to initialize parent attributes
+
+4. Write a program to demonstrate method overriding where:
+   - Child class redefines a parent method
+
+5. Show method overloading behavior in Python by:
+   - Using default arguments or `*args` in a class method
+
+---
+
+## 4. Polymorphism (5 Coding Questions)
+
+1. Write a program demonstrating method overriding polymorphism using:
+   - Parent class `Shape`
+   - Child classes `Square` and `Triangle`
+
+2. Implement operator overloading by:
+   - Overloading the `+` operator in a `Vector` class
+
+3. Demonstrate duck typing by:
+   - Creating unrelated classes with the same method name
+   - Calling the method without checking object type
+
+4. Write a program where:
+   - Different objects respond differently to the same method call
+
+5. Create a class that overloads:
+   - `__str__()` and `__len__()` to show polymorphic behavior
+
+---
