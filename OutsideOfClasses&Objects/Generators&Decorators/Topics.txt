@@ -1,0 +1,82 @@
+Generators — Coding Problems
+Level 1: Beginner
+
+
+Write a generator function that yields numbers from 1 to N.
+
+Write a generator that yields even numbers up to a given limit.
+
+Create a generator that yields characters of a string one by one.
+
+Write a generator that yields the square of numbers from 0 to 9.
+
+Convert a list comprehension that generates cubes of numbers into a generator expression.
+
+
+Level 2: Intermediate
+
+Write a generator that yields Fibonacci numbers up to a given limit.
+
+Create a generator that reads a file line by line and yields each line without loading the full file into memory.
+
+Write a generator that yields prime numbers within a given range.
+
+Implement a generator that flattens a nested list (one level deep).
+
+Write a generator that yields running cumulative sums of a list.
+
+
+Level 3: Advanced
+
+Write an infinite generator that yields powers of 2 and stops externally using next().
+
+Implement a generator that mimics the behavior of range(start, stop, step).
+
+Write a generator that performs lazy evaluation of a mathematical sequence and supports send().
+
+Implement a pipeline of generators where one filters data and another transforms it.
+
+Write a generator that yields values from a tree using depth-first traversal.
+
+
+
+
+
+Decorators — Coding Problems
+Level 1: Beginner
+
+Write a decorator that prints "Function started" before a function executes.
+
+Create a decorator that prints the function name before calling it.
+
+Write a decorator that counts how many times a function is called.
+
+Implement a decorator that converts a function’s return value to uppercase.
+
+Write a decorator that measures and prints execution time of a function.
+
+
+Level 2: Intermediate
+
+Write a decorator that accepts arguments and repeats function execution N times.
+
+Create a decorator that validates function input types.
+
+Write a decorator that logs function arguments and return values.
+
+Implement a decorator that restricts function access based on a boolean flag (is_authenticated).
+
+Write a decorator that caches function results (memoization).
+
+
+Level 3: Advanced
+
+Write a decorator that works correctly on functions with any number of positional and keyword arguments.
+
+Implement a class-based decorator for timing function execution.
+
+Write a decorator that preserves function metadata using functools.wraps.
+
+Create a decorator stack where multiple decorators modify function behavior in sequence.
+
+Write a decorator that can be applied to both functions and class methods.
