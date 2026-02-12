@@ -22,3 +22,21 @@ while True:
         print(next(gen1))
     except StopIteration:
         pass
+
+
+
+# Create a generator that reads a file line by line and yields each line without loading the full file into memory.
+
+def generator(file):
+    with open(file, "r") as fi1:
+        for i in fi1:
+            yield i
+        
+gen1 = generator("file.txt")
+
+try:
+    while True:
+        print(next(gen1))
+except StopIteration:
+    pass
+    
