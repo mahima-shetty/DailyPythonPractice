@@ -31,4 +31,34 @@ print(auti(3))
 
 
 
-## 
+## UnboundLocalError
+
+x = 10
+
+def auti ():
+    x = x + 5
+    return x
+
+print(auti())
+# UnboundLocalError: cannot access local variable 'x' where it is not associated with a value
+
+
+
+
+x = 10
+
+def auti ():
+    global x
+    x = x + 5
+    return x
+
+print(auti())
+
+#15
+
+#--------------------------------------
+
+
+
+
+
