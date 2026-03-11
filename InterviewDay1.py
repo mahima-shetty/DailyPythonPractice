@@ -77,6 +77,9 @@ print(lst)
 
 #-----------------------------------------
 
+
+#Late Binding in Closures
+
 lst = []
 
 for i in range(3):
