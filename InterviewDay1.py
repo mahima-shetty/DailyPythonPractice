@@ -77,5 +77,26 @@ print(lst)
 
 #-----------------------------------------
 
+lst = []
+
+for i in range(3):
+    lst.append(lambda : i)
+
+print([f() for f in lst])
+# [2,2,2]
+
+
+lst = []
+
+for i in range(3):
+    lst.append(lambda i = i: i)
+
+print([f() for f in lst])
+#[0,1,2]
+
+#------------------------------------------
+    
+
+
 
 
