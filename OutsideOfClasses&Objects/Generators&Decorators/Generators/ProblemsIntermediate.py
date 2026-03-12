@@ -62,6 +62,21 @@ except StopIteration:
     pass
 
 
-    
+# Implement a generator that flattens a nested list (one level deep).
+
+lst = [1,[2,3], [4,5,6], 7]
+def flatten_lst(lst):
+    for item in lst:
+        if isinstance(item, int) or isinstance(item, str) :
+            yield item
+            
+        if isinstance(item, list):
+            for i in item:
+                yield i
+
+g = flatten_lst(lst)
+try :
+    while True:
+        print(next(g))
+except StopIteration:
     pass
-    
