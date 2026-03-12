@@ -158,5 +158,16 @@ lst = [i*i for i in range(3)]
 print(list(lst)) #[0, 1, 4]
 print(list(lst)) #[0, 1, 4]
 
+#---------------------------------------
+
+#Tuple Mutability Surprise
+
+t = ([1,2], [3,4])
+t[0].append(5)
+
+print(t) #([1,2,5], [3,4])
 
 
+t = ([1,2], [3,4])
+t[0] = [10,20]
+TypeError
