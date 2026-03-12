@@ -38,5 +38,30 @@ try:
     while True:
         print(next(gen1))
 except StopIteration:
+
+
+    # Write a generator that yields prime numbers within a given range.
+
+num = int(input("Enter number "))
+def prime_gen(num):
+    is_Prime = True
+    for n in range(2, num+1): # 2 3 4 5 6 7 
+        for i in range(2, n): # 2 
+            if n%i == 0:
+                is_Prime =  False
+                break
+        if is_Prime:
+            yield n
+        is_Prime = True
+p = prime_gen(num)
+       
+try :
+    while True:
+        print(next(p))
+except StopIteration:
+    pass
+
+
+    
     pass
     
