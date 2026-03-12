@@ -80,3 +80,22 @@ try :
         print(next(g))
 except StopIteration:
     pass
+
+
+# Write a generator that yields running cumulative sums of a list.
+
+
+lst = [1,2,3,4,5,6,7,8,9]
+
+def cum_sum(lst):
+    sum = 0
+    for i in lst:
+        sum += i
+        yield sum
+        
+c = cum_sum(lst)
+try :
+    while True:
+        print(next(c))
+except StopIteration:
+    pass
