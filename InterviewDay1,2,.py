@@ -174,7 +174,7 @@ t[0] = [10,20]
 
 
 #------------------------------------
-
+# Dictionary Key Behavior
 d = {}
 
 d[(1,2)] = "tuple"
@@ -193,5 +193,8 @@ print(d)
 # {(1, 2): 'list'}
 
 # ---------------------------------------
+# Boolean Arithmetic
 
+print(True + True * False)
+#1
 
