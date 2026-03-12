@@ -112,6 +112,45 @@ print(a == c)
 # True
 
 #----------------------------------------------
+# Modifying List During Iteration
+
+nums = [1,2,3,4]
+
+for n in nums:
+    if n % 2 == 0:
+        nums.remove(n)
+
+print(nums)
+
+#output: [1,3]
+
+
+
+nums = [n for n in nums if n % 2 != 0]
+
+# equaivalent code:
+nums = [1,2,3,4]
+
+new_list = []
+
+for n in nums:
+    if n % 2 != 0:
+        new_list.append(n)
+
+nums = new_list
+
+for n in nums[:]:
+    if n % 2 == 0:
+        nums.remove(n)
+
+
+#-------------------------------------------
+#Generator vs List
+
+gen = (i*i for i in range(3))
+
+print(list(gen)) #[0,1,4]
+print(list(gen)) #[]
 
 
 
