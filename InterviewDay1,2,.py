@@ -146,12 +146,17 @@ for n in nums[:]:
 
 #-------------------------------------------
 #Generator vs List
-
+#GENERATOR
 gen = (i*i for i in range(3))
 
 print(list(gen)) #[0,1,4]
 print(list(gen)) #[]
 
+#LIST
+lst = [i*i for i in range(3)]
+
+print(list(lst)) #[0, 1, 4]
+print(list(lst)) #[0, 1, 4]
 
 
 
