@@ -35,10 +35,24 @@ on c.customer_id = o.customer_id
 ) tbl
 where rnk = 2
 
+--Retrieve the top 3 first name and lastname basis of amount by country
+
+ 
+select first_name, last_name, country, amount from
+( 
+select c.country, o.amount, c.first_name, c.last_name, dense_rank() over (partition by ----c.country order by o.amount desc) as rnk from
+customers c INNER JOIN orders o
+on c.customer_id = o.customer_id
+) tbl
+where rnk <= 3
 
 
 
+-- Rank employees within each country based on amount.
 
+select c.country, o.amount, c.first_name, c.last_name, dense_rank() over (partition by c.country order by o.amount desc) as rnk from
+customers c INNER JOIN orders o
+on c.customer_id = o.customer_id;
 
 
 
